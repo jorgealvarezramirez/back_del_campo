@@ -1,0 +1,24 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "proyecto web comercialización productos agricolas",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "Equipo Grupo 7 del Grupo 19 Ciclo 4 MisionTIC",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.13",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15"
+  }
+}

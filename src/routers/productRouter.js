@@ -9,7 +9,7 @@ class ProductRouter{
         this.#config();
     }
 
-    //#-> Crear método privado
+    //#-> Para crear método privado
     #config(){
         let tokenC = new TokenController();        
         //Construir objeto

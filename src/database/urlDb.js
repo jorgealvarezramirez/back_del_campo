@@ -1,5 +1,8 @@
-const user = "ventas-agro";
-const pass = "HGuHFzLJY7TpwF90";
+let user = process.env.NODE_USER;
+let pass = process.env.NODE_PASS;
+
+// const user = "ventas-agro";
+// const pass = "HGuHFzLJY7TpwF90";
 const database = "Cluster0";
 
 module.exports = {

@@ -1,17 +1,17 @@
-const {Router} = require('express');
+const { Router } = require('express');
 const ProductController = require('../controllers/productController');
 const TokenController = require('../controllers/tokenController');
 
-class ProductRouter{
+class ProductRouter {
 
-    constructor(){
+    constructor() {
         this.router = Router();
         this.#config();
     }
 
     //#-> Para crear método privado
-    #config(){
-        let tokenC = new TokenController();        
+    #config() {
+        let tokenC = new TokenController();
         //Construir objeto
         const productC = new ProductController();
         //Configurar rutas

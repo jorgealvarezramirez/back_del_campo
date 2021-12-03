@@ -5,7 +5,8 @@ class UserController {
 
     register(req, res) {
         let objUser = req.body;
-        if (objUser.name && objUser.lastname && objUser.email && objUser.password) {
+        if (objUser.name && objUser.lastname && objUser.email && objUser.password &&
+            objUser.nickname && objUser.kindId && objUser.id && objUser.tel && objUser.address) {
             //Guardar usuario en la BD
             User.create(objUser, (error, doc) => {
                 if (error) {
@@ -30,8 +31,8 @@ class UserController {
                 if (doc != null && doc != undefined) {
                     let token = jwt.sign({ id: doc._id }, process.env.JWT_PRIVATE_KEY);
                     res.status(200).json({ token });
-                }else{
-                    res.status(401).json({info: 'Credenciales inválidas'});
+                } else {
+                    res.status(401).json({ info: 'Credenciales inválidas' });
                 }
             }
         });

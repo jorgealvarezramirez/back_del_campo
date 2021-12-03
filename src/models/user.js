@@ -1,4 +1,4 @@
-const {Schema, model} = require('mongoose');
+const { Schema, model } = require('mongoose');
 
 const userSchema = Schema({
     name: {
@@ -12,7 +12,23 @@ const userSchema = Schema({
     },
     password: {
         type: String
+    },
+    nickname: {
+        type: String
+    },
+    kindId: {
+        type: String
+    },
+    id: {
+        type: String
+    },
+    tel: {
+        type: String
+    },
+    address: {
+        type: String
     }
+
 }, {
     collection: "users"
 });
